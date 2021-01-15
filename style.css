@@ -77,7 +77,34 @@ form button:hover{
     text-decoration: line-through;
     opacity: 0.5;
 }
-.fall{
-    transform: translateY(10rem) rotateZ(20deg);
-    opacity: 0;
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    padding: 13.5px;
+}
+.select{
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+select{
+
+    cursor: pointer;
+    width: 120px;
+}
+.select::after{
+    content: "\25BC";
+    top: 1;
+    right: 0;
+    padding: 12px;
+    background-color :rgb(80, 194, 214);
+    position: absolute;
+    cursor: pointer;
+    pointer-events: none;
 }
